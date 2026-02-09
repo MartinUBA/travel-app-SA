@@ -609,8 +609,8 @@ body.sidebar-open {
     }
 }
 
-/* Ocultar logo de San Andrés en teléfonos muy pequeños */
-@media (max-width: 562px) {
+/* Ocultar logo de San Andrés en tablets y dispositivos menores */
+@media (max-width: 768px) {
     .map-logo {
         display: none;
     }
