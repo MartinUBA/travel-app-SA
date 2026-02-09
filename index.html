@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Martin Nuñez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/maplibre-gl@^5.9.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@^5.9.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="contenedor-app">
+
+        <header>
+        <div class="barra-navegacion">
+
+
+            <div class="search-wrapper">
+                <input type="text" id="ingresarDatos" placeholder="Search location...">
+            </div>
+            <button id="btnBuscar" class="btn btn-primario">Search</button>
+            <span id="visualizacion-distancia" class="visualizacion-distancia"> distance: --km</span>
+            <button id ="btnLimpiarRuta" class="btn btn-borde">Clean route</button>
+        </div>
+        </header>
+        
+        <div class="contenido">
+
+            <button id="btn-menu-hamburguesa">
+                <img src="./assets/menu-harmburguesa.svg" alt="">
+            </button>
+
+            <sidebar id="sidebar">
+                <div class="encabezado-poi">
+                    <h2>Points of Interest</h2>
+                </div>
+                
+                <div class="contenedor-progreso">
+                    <div class="etiqueta-progreso">
+                        <span>Progress: </span>
+                        <span id="porcentaje-progreso">0%</span>
+                    </div>
+                    <div class="barra-progreso-contenedor">
+                        <div id="barra-progreso" class="barra-progreso"></div>
+                    </div>
+                </div>
+
+                <div id="lista-poi" class="lista-poi">
+                    <p>Loading points of interest...</p>
+                </div>
+            </sidebar>
+
+            <div class="contenedor-mapa">
+                <div id="map"></div>
+
+                <div class="map-logo">
+                    <img src="./assets/logo-san-andres.png" alt="San Andrés logo">
+                </div>
+
+                <div class="contenedor-favoritos">
+                    <button id="btn-favoritos" class="btn-favoritos">
+                        <img src="./assets/favoritos.svg" alt="">
+                    </button>
+                    <div id= "lista-favoritos"class="lista-favoritos">
+                        <div class="contenido-favoritos">
+                            <p>There is no favorite points</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="mapa-copyright">
+                    <p>Copyright © 2026 Martin Nuñez. All rights reserved.</p>
+                </div>
+
+            </div>
+
+             
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
