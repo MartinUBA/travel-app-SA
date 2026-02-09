@@ -610,7 +610,7 @@ body.sidebar-open {
 }
 
 /* Ocultar logo de San Andrés en teléfonos muy pequeños */
-@media (max-width: 430px) {
+@media (max-width: 562px) {
     .map-logo {
         display: none;
     }
