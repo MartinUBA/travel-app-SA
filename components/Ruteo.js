@@ -27,7 +27,7 @@ export function Ruteo(
             let ruta = dataRuteo.routes[0].geometry;
             let distancia = dataRuteo.routes[0].distance;
 
-            txtVisualizarDistancia.textContent = `Distancia ${distancia} km`
+            txtVisualizarDistancia.textContent = `Distancia ${distancia} m`
 
             map.addSource('ruta_source', {
                 'type': 'geojson',
